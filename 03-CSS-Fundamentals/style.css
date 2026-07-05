@@ -1,0 +1,140 @@
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+  color: #8d0a0a;
+}
+
+h1,
+h2,
+h3 {
+  color: #6b16c0;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+  color: #6b16c0;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+li {
+  font-size: 20px;
+}
+
+/* footer p {
+  font-size: 16px;
+} */
+
+/* only one line of the group of paragraph in italic */
+/* article header p {
+  font-size: italic;
+} */
+
+/* id and avoid big selectors */
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+/* when i need to change multiple paragraphs without using id...there class comes handy */
+/* we use . for classes */
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* when for example the p gets called three times in the css...so which rule it should follow. */
+/* all of these are going to apply */
+.bullets {
+  list-style: none;
+}
+
+/* WORKING WITH COLOURS */
+.head {
+  background-color: #eb8282;
+}
+
+aside {
+  background-color: #eb8282;
+  border-top: 5px solid #6b16c0;
+  border-bottom: 5pX solid #6b16c0;
+  border-left: 5px dotted #2d3915;
+  border-right: 5px dotted #470606; #dotted, solid
+}
+
+body {
+  background-color: lightblue;
+}
+
+/* pseudo class */
+
+
+/* .first-li {
+  font-weight: bold;
+} */
+
+/* css will figure out which is the first point */
+
+li:first-child {
+  font-weight: bold;
+}
+/* } it will select all the l1 elements */
+
+li:last-child {
+  font-style: italic;
+}
+
+li:nth-child(2) {
+  color: red;
+} 
+/* i can also write odd and even in place of number */
+
+/* this selector should have selected the first p element */
+
+article p :first-child {
+  color: red;
+}
+
+/* first child is actually a header ..it will only work if the first element is p*/
+
+/* this wont work */
+article p:first-child{
+  color: blue;
+}  
+/* it will work ^^^ */
+
+/* a {
+  color: blue
+} */
+
+
+/* pseudo link */
+/* this will target only href attributes */
