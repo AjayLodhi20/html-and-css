@@ -1,11 +1,11 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
-  font-family: sans-serif;
-  color: #8d0a0a;
+* {
+  /* universal selector */
+  /* border-top: 5px solid black; not helpful*/
+}
+
+body {
+  color: #6e1616;
+  font-family: sans-serif; /*it is not applied to all child elements*/
 }
 
 h1,
@@ -85,17 +85,17 @@ li {
 aside {
   background-color: #eb8282;
   border-top: 5px solid #6b16c0;
-  border-bottom: 5pX solid #6b16c0;
+  border-bottom: 5px solid #6b16c0;
   border-left: 5px dotted #2d3915;
-  border-right: 5px dotted #470606; #dotted, solid
+  border-right: 5px dotted #2d3915;
 }
 
+/* #dotted, solid */
 body {
   background-color: lightblue;
 }
 
 /* pseudo class */
-
 
 /* .first-li {
   font-weight: bold;
@@ -114,7 +114,7 @@ li:last-child {
 
 li:nth-child(2) {
   color: red;
-} 
+}
 /* i can also write odd and even in place of number */
 
 /* this selector should have selected the first p element */
@@ -126,15 +126,63 @@ article p :first-child {
 /* first child is actually a header ..it will only work if the first element is p*/
 
 /* this wont work */
-article p:first-child{
+article p:first-child {
   color: blue;
-}  
+}
 /* it will work ^^^ */
 
 /* a {
   color: blue
 } */
 
-
+/* styling links */
 /* pseudo link */
+
 /* this will target only href attributes */
+a:link {
+  color: rgb(218, 228, 31);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(218, 228, 31);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(101, 32, 191);
+  font-weight: bold;
+  text-decoration: underline rgb(216, 51, 51);
+}
+
+/* active pseeudo class */
+a:active {
+  background-color: rgb(216, 51, 51);
+  font-style: italic;
+}
+
+/* priority of the elements and class and id */
+/* #copyright {
+  color: rgb(190, 55, 55);
+}
+
+.copyright {
+  color: rgb(81, 248, 52);
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: rgb(122, 8, 160) !important;
+} */
+
+nav p {
+  font-size: 18;
+  color: rgb(66, 18, 18);
+}
+
+nav {
+  font-size: 18px;
+}

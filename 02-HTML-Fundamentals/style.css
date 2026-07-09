@@ -1,0 +1,46 @@
+body {
+  font-family: sans-serif;
+  border: 3px solid black;
+  line-height: 1.5;
+}
+
+.shipping {
+  font-size: 18px;
+  color: rgb(251, 130, 195);
+}
+
+a:link {
+  color: rgb(30, 212, 45);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+button {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: rgb(247, 247, 247);
+  color: black;
+  font-weight: bold;
+  border: white;
+  cursor: pointer;
+}
+
+.main-head {
+  background-color: rgb(245, 240, 240);
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: square;
+}
