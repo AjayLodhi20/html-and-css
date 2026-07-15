@@ -1,12 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
 body {
   font-family: sans-serif;
   border: 3px solid black;
-  line-height: 1.5;
 }
 
 .shipping {
   font-size: 18px;
   color: rgb(251, 130, 195);
+  margin-top: 20px;
 }
 
 a:link {
@@ -39,8 +48,19 @@ button:hover {
   text-align: center;
   font-size: 22px;
   text-transform: uppercase;
+  padding: 20px 90px;
 }
 
 ul {
   list-style-type: square;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+.list {
+  margin-bottom: 10px;
+}
+
+.price {
+  font-weight: 1000;
 }
