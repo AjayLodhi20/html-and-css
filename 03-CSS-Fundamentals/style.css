@@ -1,6 +1,8 @@
 * {
   /* universal selector */
   /* border-top: 5px solid black; not helpful*/
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -8,10 +10,43 @@ body {
   font-family: sans-serif; /*it is not applied to all child elements*/
 }
 
+.container {
+  width: 700px;
+  margin: 0 auto;
+}
+
+nav {
+  font-size: 18px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
 h1,
 h2,
 h3 {
   color: #6b16c0;
+  margin-bottom: 30px;
+}
+
+.head {
+  background-color: #eb8282;
+  padding: 20px 10px;
+  margin-bottom: 60px;
+  height: auto;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+aside {
+  background-color: #eb8282;
+  border-top: 5px solid #6b16c0;
+  border-bottom: 5px solid #6b16c0;
+  padding: 50px 50px;
+  width: 500px;
 }
 
 h1 {
@@ -23,10 +58,13 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 h4 {
@@ -38,12 +76,22 @@ h4 {
 p {
   font-size: 22px;
   line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
 }
 
 li {
   font-size: 20px;
+  margin-bottom: 10px;
 }
 
+li:last-child {
+  margin-bottom: 0px;
+}
 /* footer p {
   font-size: 16px;
 } */
@@ -78,17 +126,6 @@ li {
 }
 
 /* WORKING WITH COLOURS */
-.head {
-  background-color: #eb8282;
-}
-
-aside {
-  background-color: #eb8282;
-  border-top: 5px solid #6b16c0;
-  border-bottom: 5px solid #6b16c0;
-  border-left: 5px dotted #2d3915;
-  border-right: 5px dotted #2d3915;
-}
 
 /* #dotted, solid */
 body {
@@ -105,6 +142,8 @@ body {
 
 li:first-child {
   font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 /* } it will select all the l1 elements */
 
@@ -162,7 +201,7 @@ a:active {
 }
 
 /* priority of the elements and class and id */
-/* #copyright {
+#copyright {
   color: rgb(190, 55, 55);
 }
 
@@ -176,13 +215,14 @@ a:active {
 
 footer p {
   color: rgb(122, 8, 160) !important;
-} */
+}
 
 nav p {
   font-size: 18;
   color: rgb(66, 18, 18);
 }
 
-nav {
-  font-size: 18px;
+.post-img {
+  width: 100%;
+  height: auto;
 }
