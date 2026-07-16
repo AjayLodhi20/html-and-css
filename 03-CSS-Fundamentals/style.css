@@ -5,6 +5,8 @@
   padding: 0;
 }
 
+/* PAGE SECTIONS */
+
 body {
   color: #6e1616;
   font-family: sans-serif; /*it is not applied to all child elements*/
@@ -48,6 +50,7 @@ aside {
   padding: 50px 50px;
   width: 500px;
 }
+/* SMALLER ELEMENTS */
 
 h1 {
   font-size: 26px;
