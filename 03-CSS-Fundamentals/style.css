@@ -10,6 +10,14 @@
 body {
   color: #6e1616;
   font-family: sans-serif; /*it is not applied to all child elements*/
+  position: relative;
+}
+
+button {
+  padding: 20px;
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
 }
 
 .container {
@@ -17,12 +25,19 @@ body {
   margin: 0 auto;
 }
 
-nav {
+nav a:link {
   font-size: 18px;
+  /* background-color: orange;
+  margin: 20px;
+  padding: 20px 40px;
+  display: block; */
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
 }
 
-article {
-  margin-bottom: 60px;
+nav a:link:last-child {
+  margin-right: 0;
 }
 
 h1,
@@ -41,6 +56,7 @@ h3 {
 
 .post-header {
   margin-bottom: 40px;
+  position: relative;
 }
 
 aside {
@@ -80,6 +96,7 @@ p {
   font-size: 22px;
   line-height: 1.5;
   margin-bottom: 15px;
+  /* display: inline; */
 }
 
 ul,
@@ -90,6 +107,7 @@ ol {
 li {
   font-size: 20px;
   margin-bottom: 10px;
+  /* display: inline; */
 }
 
 li:last-child {
@@ -218,11 +236,6 @@ a:active {
 
 footer p {
   color: rgb(122, 8, 160) !important;
-}
-
-nav p {
-  font-size: 18;
-  color: rgb(66, 18, 18);
 }
 
 .post-img {
